@@ -25,3 +25,24 @@ while figure != 4:
     else:
         print('올바른숫자를 입력해주세요.')
 
+# for문 구구단생성
+
+for i in range(2,10):
+    print("구구단수:", i)
+    for j in range(1,10): # 1~9까지 반복
+        print(f"{i}*{j} = {i*j}") # 1 * 1 = 1, 1 * 2 = 2, 1 * 3 = 3 ~ 1 * 9 = 9
+
+#클래스를 활용한 원넓이 공식
+
+import math
+
+class Circle:
+    color = "red"
+
+    def __init__(self, radius, x, y):
+        self.radius = radius
+        self.x = x
+        self.y = y
+
+    def area(self):
+        return self.radius * self.radius * math.pi
